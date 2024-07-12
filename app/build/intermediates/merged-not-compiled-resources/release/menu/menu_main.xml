@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_1"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title="دُعا"/>
+    <item
+        android:id="@+id/menu_item_2"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title="نعت شریف" />
+    <item
+        android:id="@+id/menu_item_3"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title="غزلیں" />
+    <item
+        android:id="@+id/menu_item_4"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title= "نظمیں" />
+    <item
+        android:id="@+id/menu_item_5"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title="قطعات" />
+    <item
+        android:id="@+id/menu_item_6"
+        android:actionLayout="@layout/custom_menu_item"
+        android:title="متفرق اشعار" />
+</menu>

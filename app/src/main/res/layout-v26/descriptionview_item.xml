@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <arsatech.co.justifiedtextview.JustifiedTextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        xmlns:noghteh="http://noghteh.ir"
+        android:gravity="center"
+        android:fontFamily="@font/mehrnastailqwebregular"
+        android:text="****"
+        android:justificationMode="inter_word"
+        android:textColor="#454545"
+        android:textIsSelectable="true"
+        android:textSize="20dp"
+        noghteh:textSize="18sp"
+        >
+
+    </arsatech.co.justifiedtextview.JustifiedTextView>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.khak.daan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log_im"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/log_im"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.khak.daan.Activitys.SearchDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.ImageZoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LikedDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.StaticCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.IntroductionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LikedlistActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.PrefaceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LastActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.GhazalsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.SpeechActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.MainActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".SpeechActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name="com.khak.daan.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.9'
+    }
+}
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.khak.daan"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 2
+        versionName "1.0.2"
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+//    Key password: Ftech@123
+//    key alias: key0
+//    Jks file name: khak.jks
+
+
+    signingConfigs {
+        release {
+            storeFile file('path/to/Khakdaan.jks')
+            storePassword 'Ftech@123'
+            keyAlias 'key0'
+            keyPassword 'Ftech@123'
+        }
+    }
+
+    lintOptions {
+        disable "ResourceType"
+        checkReleaseBuilds false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+ //SQlite db
+    implementation 'androidx.sqlite:sqlite:2.4.0'
+
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+// text justify
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
+
+    implementation 'org.sufficientlysecure:html-textview:4.0'
+
+    implementation 'com.jsibbold:zoomage:1.3.1'
+
+    implementation 'com.otaliastudios:zoomlayout:1.9.0'
+
+    implementation 'com.github.arefbhrn:JustifiedTextView:1.0.6'
+
+    //new
+    implementation 'com.github.shopgun:zoomlayout:3.0.0'
+
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khak.daan"
+    android:versionCode="2"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.khak.daan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.khak.daan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@drawable/log_im"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/log_im"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.khak.daan.Activitys.SearchDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.ImageZoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LikedDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.StaticCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.IntroductionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LikedlistActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.PrefaceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.LastActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.GhazalsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.SpeechActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.khak.daan.Activitys.MainActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".SpeechActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name="com.khak.daan.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.khak.daan.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="user_email_max_length">50</integer>
+    <integer name="user_password_max_length">15</integer>
+    <integer name="user_f_l_m_name_max_length">25</integer>
+    <integer name="user_dob_max_length">10</integer>
+    <integer name="user_zipcode_max_length">10</integer>
+    <integer name="user_mobile_max_length">10</integer>
+    <integer name="user_address_line_one_two_max_length">40</integer>
+    <integer name="user_address_location_zip_code_max_length">6</integer>
+
+
+    <integer name="user_store_feedback_max_description_length">500</integer>
+
+    <integer name="store_name_max_length">35</integer>
+
+
+</resources>

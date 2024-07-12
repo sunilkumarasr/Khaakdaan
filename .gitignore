@@ -1,0 +1,38 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.so
+*.o
+*.log
+
+# Files for the IDE (Android Studio, IntelliJ, etc.)
+/.idea/
+/.gradle/
+/local.properties
+/.iml
+/.DS_Store
+/captures/
+
+# Gradle files
+.gradle/
+/build/
+
+# Android Studio navigation files
+.navigation/
+
+# ProGuard files
+proguard/
+
+# Other generated files
+bin/
+gen/
+out/
+
+# External dependencies
+/.externalNativeBuild
+
+# NDK
+cxx/

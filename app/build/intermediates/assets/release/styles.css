@@ -1,0 +1,33 @@
+/* styles.css */
+@font-face {
+    font-family: 'mehrnastailqwebregular';
+    src: url('file:///android_res/font/mehrnastailqwebregular.ttf');
+}
+body {
+    font-family: 'mehrnastailqwebregular';
+    text-align: justify;
+    display: block;
+}
+ .stars{
+    text-align:center;
+    font-size: 20px;
+}
+.center-word {
+     text-align: justify;  /* For Edge */
+     text-align-last: justify;
+     line-height: 1.5;
+     margin-left: 10%;
+     margin-right: 10%;
+     font-size: 18.5px;
+     direction: rtl;
+}
+.right-align{
+     text-align: right;
+     text-align-last: right;
+     word-spacing: 2px;
+     line-height: 1.5;
+     margin-left: 5%;
+     margin-right: 10%;
+     font-size: 18.5px;
+     direction: rtl;
+}
