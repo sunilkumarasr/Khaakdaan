@@ -186,7 +186,6 @@
                             android:textColor="@color/White"
                             android:fontFamily="@font/mehrnastailqwebregular"
                             />
-
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 

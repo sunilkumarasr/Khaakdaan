@@ -1,17 +1,17 @@
-#Tue Jul 02 19:37:40 IST 2024
-base.0=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.4=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.5=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.6=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.7=C\:\\Users\\sunil\\Downloads\\Khaakdaan\\Khaakdaan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+#Tue Apr 15 20:53:22 IST 2025
+base.0=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+base.4=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.5=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
+base.6=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.7=/Users/sunil/Documents/FutureTech/GitHub/Khaakdaan/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=10/classes.dex
-path.3=14/classes.dex
-path.4=1/classes.dex
+path.2=1/classes.dex
+path.3=10/classes.dex
+path.4=14/classes.dex
 path.5=2/classes.dex
 path.6=5/classes.dex
 path.7=9/classes.dex
