@@ -17,7 +17,7 @@
         app:cardCornerRadius="15dp"
         app:cardElevation="5dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:text="text"
             android:padding="@dimen/dimen_8dp"
             android:fontFamily="@font/mehrnastailqwebregular"
-            android:textSize="30dp"
+            android:textSize="30sp"
            />
     </androidx.cardview.widget.CardView>
 

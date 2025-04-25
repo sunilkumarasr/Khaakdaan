@@ -11,7 +11,6 @@
         android:id="@+id/card_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
@@ -23,23 +22,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/like_remove"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/baseline_delete_24"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:visibility="gone"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="*****"
                 android:padding="10dp"
                 android:textColor="#005cb9"
-                android:textSize="@dimen/dimen_16dp"
+                android:textSize="16sp"
                 android:layout_marginLeft="@dimen/dimen_15dp"
                 android:layout_marginRight="@dimen/dimen_15dp"
                 android:fontFamily="@font/mehrnastailqwebregular"

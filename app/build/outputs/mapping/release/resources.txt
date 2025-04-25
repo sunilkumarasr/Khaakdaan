@@ -113,8 +113,8 @@ zoom:
 keyframe
 scaleY:
 MButtonToggleGroup
-controllerProvider
 0
+controllerProvider
 onBackProgressed
 USAGE_UNKNOWN
 1
@@ -214,8 +214,8 @@ child
 android.media.metadata.WRITER
 strokeWidth
 androidx.view.accessibility.Accessibi...
-setSelectedPositionInt
 kotlin.collections.MutableCollection
+setSelectedPositionInt
 repeatMode
 ACTION_CLEAR_FOCUS
 DEEP_COPY_VALIDATOR_KEY
@@ -228,8 +228,8 @@ TITLETOP
 androidx.core.view.inputmethod.InputC...
 RESULT_DELETE_SKIP_FILE_SUCCESS
 SDK_INT
-TooltipPopup
 mInitialAbsFocusPoint.y:
+TooltipPopup
 engine
 provider
 setFrame
@@ -341,9 +341,9 @@ translateY
 appwidget
 translateX
 TextView
+setEpicenterBounds
 android.media.metadata.TRACK_NUMBER
 buffer
-setEpicenterBounds
 ImageView
 repeatCount
 void
@@ -398,8 +398,8 @@ endColor
 android:visibility:parent
 suggest_intent_extra_data
 AppCompatCustomView
-onBackCancelled
 suggest_flags
+onBackCancelled
 emojiCompat
 centerColor
 absolutePoint
@@ -423,8 +423,8 @@ anim
 TaskStackBuilder
 succeeded
 pathRotate
-getHorizontallyScrolling
 USAGE_GAME
+getHorizontallyScrolling
 PathParser
 Spinner
 circularReveal
@@ -556,8 +556,8 @@ androidx:appcompat
 EmptyCoroutineContext
 layout_constraintEnd_toStartOf
 android.media.metadata.COMPILATION
-android.media.metadata.DISPLAY_ICON
 in_progress
+android.media.metadata.DISPLAY_ICON
 connectivity
 font_ttc_index
 propertyYName
@@ -666,8 +666,8 @@ kotlin.String.Companion
 CURRENT_MONTH_KEY
 ACTION_PREVIOUS_HTML_ELEMENT
 http://schemas.android.com/apk/res/an...
-ACTION_SHOW_TOOLTIP
 suggest_text_2_url
+ACTION_SHOW_TOOLTIP
 jClass
 zoom
 addFontFromAssetManager
@@ -680,8 +680,8 @@ android.intent.action.PROCESS_TEXT
 tv_input
 PopupWindowCompatApi21
 ViewUtilsBase
-mAttachInfo
 mIsChildViewEnabled
+mAttachInfo
 classes.dex
 ANIMATING
 user
@@ -715,8 +715,8 @@ TwilightManager
 ON_ANY
 ReceiveContent
 METHODS
-guava.concurrent.generate_cancellatio...
 makeOptionalFitsSystemWindows
+guava.concurrent.generate_cancellatio...
 android.media.metadata.ALBUM
 traceCounter
 ar
@@ -752,8 +752,8 @@ ToggleButton
 set
 ACTION_IME_ENTER
 right
-transition
 computeFitSystemWindows
+transition
 DETACH
 CoordinatorLayout
 getScaledScrollFactor
@@ -810,14 +810,14 @@ android.speech.extra.LANGUAGE
 Barrier
 title
 MaterialButton
-timeout
 content
+timeout
 mButtonDrawable
 kotlin.collections.Map
 duration
 DATE_SELECTOR_KEY
-layout_constraintBottom_toTopOf
 ListPopupWindow
+layout_constraintBottom_toTopOf
 alpha
 ProfileInstaller
 java.lang.Boolean
@@ -853,10 +853,10 @@ EditText
 sgn:utils:
 android.support.v13.view.inputmethod....
 primary.prof
-params
 getLayoutAlignment
-UNDECIDED
+params
 AppCompatSpinner
+UNDECIDED
 SET_PRIMARY_NAV
 translationX
 TOP
@@ -940,8 +940,8 @@ android.webkit.
 ACTION_SCROLL_RIGHT
 addFontFromBuffer
 storage
-ClickableViewAccessibility
 ViewUtils
+ClickableViewAccessibility
 asyncTraceEnd
 ACTION_SCROLL_LEFT
 STARTED
@@ -962,8 +962,8 @@ ResourceManagerInternal
 COROUTINE_SUSPENDED
 Trace
 MenuItemImpl
-android.widget.
 ACTVAutoSizeHelper
+android.widget.
 _LifecycleAdapter
 initializers
 callback
@@ -974,8 +974,8 @@ AutoCompleteTextView
 Vertical
 00
 RestrictedAPI
-valueTo
 suggest_icon_1
+valueTo
 suggest_icon_2
 velocityY:
 android.support.v13.view.inputmethod....
@@ -1042,8 +1042,8 @@ android:target_state
 com.facebook.katana
 ACTION_EXPAND
 clipBounds
-WRITE_SKIP_FILE
 ResourceType
+WRITE_SKIP_FILE
 kotlin.Float
 store
 transformation:
@@ -1075,9 +1075,9 @@ androidx.appcompat.app.AppCompatDeleg...
 java.util.Collection
 query
 this
+android.resource
 TypefaceCompatApi21Impl
 androidx.view.accessibility.Accessibi...
-android.resource
 HIDDEN
 collection
 minLines
@@ -1109,7 +1109,7 @@ onBackPressedCallback
 TextAppearance
 textservices
 setClipToScreenEnabled
-?????
+غزلیں
 text/plain
 getMaxAvailableHeight
 android.intent.action.TIMEZONE_CHANGED
@@ -1266,7 +1266,7 @@ kotlin.Byte
 network
 mAccessibilityDelegate
 setState:
-?????
+نظمیں
 RequestPermissions
 array
 cat
@@ -1285,7 +1285,7 @@ result::
 ConstraintOverride
 java.util.Iterator
 android:visibility:visibility
-????
+دُعا
 0x%08x
 appcompat_skip_skip
 unrated
@@ -7857,8 +7857,8 @@ Marking id:fragment_container_view_tag:2131362012 used because it matches string
     @com.khak.daan:attr/actionBarSize
     @com.khak.daan:drawable/baseline_arrow_back_24
     @com.khak.daan:font/mehrnastailqwebregular
-    @com.khak.daan:drawable/home
     @com.khak.daan:dimen/dimen_15dp
+    @com.khak.daan:drawable/home
     @com.khak.daan:drawable/search_ic
     @com.khak.daan:drawable/side_menu
     @com.khak.daan:drawable/search_view_bg

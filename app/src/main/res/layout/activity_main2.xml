@@ -18,32 +18,32 @@
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="خاکدان"
                 android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"
                 android:fontFamily="@font/mehrnastailqwebregular"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_search"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_toLeftOf="@+id/img_menu"
+                android:layout_toStartOf="@+id/img_menu"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/search_ic"
                 android:alpha="0.5"/>
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_menu"
                 android:layout_width="@dimen/dimen_25dp"
                 android:layout_height="@dimen/dimen_30dp"
-                android:layout_marginRight="@dimen/dimen_15dp"
-                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/side_menu"/>
 
@@ -56,7 +56,7 @@
         android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                     android:layout_marginRight="@dimen/dimen_15dp"
                     app:cardBackgroundColor="@color/gray"
                     app:cardCornerRadius="@dimen/dimen_15dp">
-                    <ImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/img_logo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -99,12 +99,12 @@
                         app:cardElevation="5dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:outlineAmbientShadowColor="@color/black">
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="پیش لفظ"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="25sp"
                             android:textColor="@color/White"
                             android:fontFamily="@font/mehrnastailqwebregular"
                             android:layout_gravity="center_vertical"/>
@@ -125,12 +125,12 @@
                         app:cardElevation="5dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:outlineAmbientShadowColor="@color/black">
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="فہرست کلام"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="25sp"
                             android:textColor="@color/White"
                             android:fontFamily="@font/mehrnastailqwebregular"
                             android:layout_gravity="center_vertical"/>
@@ -151,12 +151,12 @@
                         app:cardElevation="5dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:outlineAmbientShadowColor="@color/black">
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="تعارف"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="25sp"
                             android:textColor="@color/White"
                             android:fontFamily="@font/mehrnastailqwebregular"
                             android:layout_gravity="center_vertical"
@@ -177,12 +177,12 @@
                         app:cardElevation="5dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:outlineAmbientShadowColor="@color/black">
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="پسندیدہ کلام"
                             android:gravity="center_horizontal"
-                            android:textSize="25dp"
+                            android:textSize="25sp"
                             android:textColor="@color/White"
                             android:fontFamily="@font/mehrnastailqwebregular"
                             />

@@ -14,50 +14,50 @@
       android:elevation="4dp"
       android:minHeight="?attr/actionBarSize">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_back"
         android:layout_width="50dp"
         android:layout_height="30dp"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:src="@drawable/baseline_arrow_back_24" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
         android:fontFamily="@font/mehrnastailqwebregular"
         android:text="تعارف"
         android:textColor="#ffff"
-        android:textSize="25dp" />
+        android:textSize="25sp" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_home"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_toLeftOf="@+id/img_search"
+        android:layout_toStartOf="@+id/img_search"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
         android:src="@drawable/home" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_search"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_toLeftOf="@+id/img_menu"
+        android:layout_toStartOf="@+id/img_menu"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:src="@drawable/search_ic"
         android:alpha="0.5"/>
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_menu"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:src="@drawable/side_menu" />
 
   </RelativeLayout>
@@ -86,12 +86,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="تعارف"
               android:textColor="#454545"
-              android:textSize="30dp"
+              android:textSize="30sp"
               android:textAlignment="center"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:padding="5dp"
@@ -108,7 +108,7 @@
               android:layout_marginTop="@dimen/dimen_15dp"
               android:layout_marginBottom="@dimen/dimen_25dp"
               app:cardBackgroundColor="@color/gray">
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/zahmad"
@@ -126,72 +126,72 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="قلمی نام:  ظہیرؔ احمد"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="اصل نام:  ظہیر الدین شیخ"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="تاریخ پیدائش: ۱۸ جنوری ۱۹۶۲ء۔ حیدرآباد   سندھ  (پاکستان)"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="ابتدائی تعلیم: نورمحمد ہائی اسکول اور گورنمنٹ سائنس کالج کالیموری ۔ حیدرآباد"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="میڈیکل تعلیم :  لیاقت میڈیکل کالج ۔ جامشورو (  سندھ)"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="اعلیٰ طبی تعلیم  :  ریاستہائے متحدہ امریکا"
               android:textIsSelectable="true"/>
 
-          <TextView
+          <androidx.appcompat.widget.AppCompatTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textColor="@color/text_color"
               android:layout_marginBottom="@dimen/dimen_3dp"
-              android:textSize="@dimen/dimen_18dp"
+              android:textSize="18sp"
               android:fontFamily="@font/mehrnastailqwebregular"
               android:text="رہائش:  ریاستہائے متحدہ امریکا"
               android:textIsSelectable="true"/>

@@ -14,7 +14,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_25dp"
@@ -23,9 +23,9 @@
             android:textAlignment="center"
             android:padding="5dp"
             android:textColor="#000000"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_25dp"
@@ -34,10 +34,10 @@
             android:fontFamily="@font/mehrnastailqwebregular"
             android:padding="5dp"
             android:textColor="#0F78A8"
-            android:textSize="50dp"
+            android:textSize="50sp"
             android:textStyle="bold" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_25dp"
@@ -46,16 +46,16 @@
             android:textAlignment="center"
             android:padding="5dp"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginBottom="@dimen/dimen_25dp"
             android:src="@drawable/hand_img"
             android:layout_gravity="center"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:padding="5dp"
             android:textAlignment="center"
             android:textColor="#FF0F78A8"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 

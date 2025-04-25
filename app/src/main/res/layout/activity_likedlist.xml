@@ -19,52 +19,52 @@
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_back"
                 android:layout_width="40dp"
                 android:layout_height="30dp"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/baseline_arrow_back_24" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_bar"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/mehrnastailqwebregular"
                 android:paddingStart="50dp"
                 android:text="پسندیدہ کلام"
                 android:textColor="#ffff"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_home"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_toLeftOf="@+id/img_search"
+                android:layout_toStartOf="@+id/img_search"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
                 android:src="@drawable/home" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_search"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_toLeftOf="@+id/img_menu"
+                android:layout_toStartOf="@+id/img_menu"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/search_ic"
                 android:alpha="0.5"/>
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_menu"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/side_menu" />
 
         </RelativeLayout>
@@ -83,7 +83,6 @@
             android:layoutDirection="rtl"
             app:queryHint="یہاں تلاش کریں۔....." />
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/titleView"
             android:layout_width="match_parent"
@@ -95,8 +94,7 @@
 
     </RelativeLayout>
 
-
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:visibility="gone"
         android:id="@+id/txt_no_data"
         android:layout_width="wrap_content"
@@ -109,6 +107,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textColor="@color/text_color"
-        android:textSize="@dimen/dimen_20dp"/>
+        android:textSize="20sp"/>
 
 </RelativeLayout>
