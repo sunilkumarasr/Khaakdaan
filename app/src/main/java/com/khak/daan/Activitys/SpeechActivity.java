@@ -107,47 +107,53 @@ public class SpeechActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.img_back:
-                AnimationSet anima = Conversions.animation();
-                v.startAnimation(anima);
 
-                Intent intent1 = new Intent(getApplicationContext(), MainActivity2.class);
-                overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent1);
-                finish();
-                break;
-            case R.id.img_home:
-                AnimationSet animae = Conversions.animation();
-                v.startAnimation(animae);
+        int id = v.getId();
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-                ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent, options.toBundle());
-                break;
-            case R.id.img_menu:
-                AnimationSet animau = Conversions.animation();
-                v.startAnimation(animau);
+        // shared animation for all clicks
+        AnimationSet animation = Conversions.animation();
+        v.startAnimation(animation);
 
-                showPopupMenu(v);
-                break;
-            case R.id.img_search:
-                AnimationSet animas = Conversions.animation();
-                v.startAnimation(animas);
+        if (id == R.id.img_back) {
 
-                Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
-                ActivityOptions optionss = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intents, optionss.toBundle());
-                break;
-            case R.id.card_2:
-                AnimationSet anima2 = Conversions.animation();
-                v.startAnimation(anima2);
+            Intent intent1 = new Intent(getApplicationContext(), MainActivity2.class);
+            overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
+            startActivity(intent1);
+            finish();
 
-                Intent intent2 = new Intent(getApplicationContext(), StaticCardActivity.class);
-                ActivityOptions options2 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent2, options2.toBundle());
-                break;
+        } else if (id == R.id.img_home) {
 
+            Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+            ActivityOptions options = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent, options.toBundle());
+
+        } else if (id == R.id.img_menu) {
+
+            showPopupMenu(v);
+
+        } else if (id == R.id.img_search) {
+
+            Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
+            ActivityOptions optionss = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intents, optionss.toBundle());
+
+        } else if (id == R.id.card_2) {
+
+            Intent intent2 = new Intent(getApplicationContext(), StaticCardActivity.class);
+            ActivityOptions options2 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent2, options2.toBundle());
         }
     }
 
@@ -169,19 +175,23 @@ public class SpeechActivity extends AppCompatActivity implements View.OnClickLis
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_1:
-                    case R.id.menu_item_2:
-                    case R.id.menu_item_3:
-                    case R.id.menu_item_4:
-                    case R.id.menu_item_5:
-                        list_Activity(menuItem);
-                        return true;
-                    case R.id.menu_item_6:
-                        ghail_Activity();
-                        return true;
-                    default:
-                        return false;
+
+                int id = menuItem.getItemId();
+
+                if (id == R.id.menu_item_1 || id == R.id.menu_item_2 ||
+                        id == R.id.menu_item_3 || id == R.id.menu_item_4 ||
+                        id == R.id.menu_item_5) {
+
+                    list_Activity(menuItem);
+                    return true;
+
+                } else if (id == R.id.menu_item_6) {
+
+                    ghail_Activity();
+                    return true;
+
+                } else {
+                    return false;
                 }
             }
         });
@@ -209,7 +219,6 @@ public class SpeechActivity extends AppCompatActivity implements View.OnClickLis
         ActivityOptions options2 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
         startActivity(intent2, options2.toBundle());
     }
-
 
     private void animation_set() {
         animationUp_bottom = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_up_down);

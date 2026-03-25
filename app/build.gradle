@@ -15,12 +15,13 @@ apply plugin: 'com.android.application'
 
 android {
 
-    compileSdkVersion 34
+    namespace "com.khak.daan"
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.khak.daan"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 36
         versionCode 3
         versionName "1.0.3"
         multiDexEnabled true
@@ -82,6 +83,49 @@ android {
         }
     }
 
+}
+
+android {
+
+    compileSdkVersion 36
+
+    defaultConfig {
+        applicationId "com.khak.daan"
+        minSdkVersion 21
+        targetSdkVersion 36
+        versionCode 3
+        versionName "1.0.3"
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    //    Key password: Ftech@123
+//    key alias: key0
+//    Jks file name: khak.jks
+
+    signingConfigs {
+        release {
+            storeFile file('path/to/Khakdaan.jks')
+            storePassword 'Ftech@123'
+            keyAlias 'key0'
+            keyPassword 'Ftech@123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 dependencies {

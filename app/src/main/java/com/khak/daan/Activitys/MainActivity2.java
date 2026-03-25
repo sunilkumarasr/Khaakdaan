@@ -76,62 +76,76 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.img_search:
-                AnimationSet animas = Conversions.animation();
-                v.startAnimation(animas);
 
-                Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
-                ActivityOptions optionss = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intents, optionss.toBundle());
-                break;
-            case R.id.img_menu:
-                AnimationSet anima = Conversions.animation();
-                v.startAnimation(anima);
+        int id = v.getId();
 
-                dynamic_menu(v);
-                break;
-            case R.id.card_imageview:
-                AnimationSet animal = Conversions.animation();
-                v.startAnimation(animal);
+        AnimationSet animation = Conversions.animation();
+        v.startAnimation(animation);
 
-                Intent intent0 = new Intent(getApplicationContext(), ImageZoomActivity.class);
-                intent0.putExtra("image_size", "1");
-                ActivityOptions options0 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent0, options0.toBundle());
-                break;
-            case R.id.btn_preface:
-                AnimationSet anima1 = Conversions.animation();
-                v.startAnimation(anima1);
+        if (id == R.id.img_search) {
 
-                Intent intent = new Intent(getApplicationContext(), PrefaceActivity.class);
-                ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent, options.toBundle());
-                break;
-            case R.id.btn_word:
-                AnimationSet anima2 = Conversions.animation();
-                v.startAnimation(anima2);
+            Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
+            ActivityOptions optionss = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intents, optionss.toBundle());
 
-                Intent intent2 = new Intent(getApplicationContext(), SpeechActivity.class);
-                ActivityOptions options2 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent2, options2.toBundle());
-                break;
-            case R.id.btn_introduction:
-                AnimationSet anima3 = Conversions.animation();
-                v.startAnimation(anima3);
+        } else if (id == R.id.img_menu) {
 
-                Intent intent3 = new Intent(getApplicationContext(), IntroductionActivity.class);
-                ActivityOptions options3 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent3, options3.toBundle());
-                break;
-            case R.id.btn_like:
-                AnimationSet anima4 = Conversions.animation();
-                v.startAnimation(anima4);
+            dynamic_menu(v);
 
-                Intent intent4 = new Intent(getApplicationContext(), LikedlistActivity.class);
-                ActivityOptions options4 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent4, options4.toBundle());
-                break;
+        } else if (id == R.id.card_imageview) {
+
+            Intent intent0 = new Intent(getApplicationContext(), ImageZoomActivity.class);
+            intent0.putExtra("image_size", "1");
+            ActivityOptions options0 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent0, options0.toBundle());
+
+        } else if (id == R.id.btn_preface) {
+
+            Intent intent = new Intent(getApplicationContext(), PrefaceActivity.class);
+            ActivityOptions options = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent, options.toBundle());
+
+        } else if (id == R.id.btn_word) {
+
+            Intent intent2 = new Intent(getApplicationContext(), SpeechActivity.class);
+            ActivityOptions options2 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent2, options2.toBundle());
+
+        } else if (id == R.id.btn_introduction) {
+
+            Intent intent3 = new Intent(getApplicationContext(), IntroductionActivity.class);
+            ActivityOptions options3 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent3, options3.toBundle());
+
+        } else if (id == R.id.btn_like) {
+
+            Intent intent4 = new Intent(getApplicationContext(), LikedlistActivity.class);
+            ActivityOptions options4 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent4, options4.toBundle());
         }
     }
 

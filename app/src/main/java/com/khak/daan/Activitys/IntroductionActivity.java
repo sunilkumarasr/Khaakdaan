@@ -57,45 +57,52 @@ public class IntroductionActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.img_back:
-                AnimationSet anima = Conversions.animation();
-                v.startAnimation(anima);
 
-                overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
-                finish();
-                break;
-            case R.id.img_home:
-                AnimationSet animae = Conversions.animation();
-                v.startAnimation(animae);
+        int id = v.getId();
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-                ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent, options.toBundle());
-                break;
-            case R.id.img_menu:
-                AnimationSet animau = Conversions.animation();
-                v.startAnimation(animau);
+        // common animation
+        AnimationSet animation = Conversions.animation();
+        v.startAnimation(animation);
 
-                showPopupMenu(v);
-                break;
-            case R.id.img_search:
-                AnimationSet animas = Conversions.animation();
-                v.startAnimation(animas);
+        if (id == R.id.img_back) {
 
-                Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
-                ActivityOptions optionss = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intents, optionss.toBundle());
-                break;
-            case R.id.card_imageview:
-                AnimationSet anima4 = Conversions.animation();
-                v.startAnimation(anima4);
+            overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
+            finish();
 
-                Intent intent4 = new Intent(getApplicationContext(), ImageZoomActivity.class);
-                intent4.putExtra("image_size", "2");
-                ActivityOptions options4 = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent4, options4.toBundle());
-                break;
+        } else if (id == R.id.img_home) {
+
+            Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+            ActivityOptions options = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent, options.toBundle());
+
+        } else if (id == R.id.img_menu) {
+
+            showPopupMenu(v);
+
+        } else if (id == R.id.img_search) {
+
+            Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
+            ActivityOptions optionss = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intents, optionss.toBundle());
+
+        } else if (id == R.id.card_imageview) {
+
+            Intent intent4 = new Intent(getApplicationContext(), ImageZoomActivity.class);
+            intent4.putExtra("image_size", "2");
+            ActivityOptions options4 = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent4, options4.toBundle());
         }
     }
 
@@ -126,23 +133,26 @@ public class IntroductionActivity extends AppCompatActivity implements View.OnCl
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_1:
-                    case R.id.menu_item_2:
-                    case R.id.menu_item_3:
-                    case R.id.menu_item_4:
-                    case R.id.menu_item_5:
-                        list_Activity(menuItem);
-                        return true;
-                    case R.id.menu_item_6:
-                        ghail_Activity();
-                        return true;
-                    default:
-                        return false;
+
+                int id = menuItem.getItemId();
+
+                if (id == R.id.menu_item_1 || id == R.id.menu_item_2 ||
+                        id == R.id.menu_item_3 || id == R.id.menu_item_4 ||
+                        id == R.id.menu_item_5) {
+
+                    list_Activity(menuItem);
+                    return true;
+
+                } else if (id == R.id.menu_item_6) {
+
+                    ghail_Activity();
+                    return true;
+
+                } else {
+                    return false;
                 }
             }
         });
-
         popupMenu.show();
     }
 

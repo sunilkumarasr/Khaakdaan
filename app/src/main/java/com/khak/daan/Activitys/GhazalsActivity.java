@@ -19,14 +19,12 @@ import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-
 import com.khak.daan.Config.CommonClass;
 import com.khak.daan.ModelAndAdapters.GhazalsModel;
 import com.khak.daan.ViewController.Conversions;
 import com.khak.daan.Config.CustomItemCityListener;
 import com.khak.daan.ModelAndAdapters.TitleViewAdapter;
 import com.khak.daan.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -169,36 +167,44 @@ public class GhazalsActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.img_back:
-                AnimationSet anima = Conversions.animation();
-                v.startAnimation(anima);
+        int id = v.getId();
 
-                overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
-                finish();
-                break;
-            case R.id.img_home:
-                AnimationSet animae = Conversions.animation();
-                v.startAnimation(animae);
+        if (id == R.id.img_back) {
+            AnimationSet anima = Conversions.animation();
+            v.startAnimation(anima);
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-                ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intent, options.toBundle());
-                break;
-            case R.id.img_menu:
-                AnimationSet animau = Conversions.animation();
-                v.startAnimation(animau);
+            overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
+            finish();
 
-                showPopupMenu(v);
-                break;
-            case R.id.img_search:
-                AnimationSet animas = Conversions.animation();
-                v.startAnimation(animas);
+        } else if (id == R.id.img_home) {
+            AnimationSet animae = Conversions.animation();
+            v.startAnimation(animae);
 
-                Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
-                ActivityOptions optionss = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intents, optionss.toBundle());
-                break;
+            Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+            ActivityOptions options = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intent, options.toBundle());
+
+        } else if (id == R.id.img_menu) {
+            AnimationSet animau = Conversions.animation();
+            v.startAnimation(animau);
+
+            showPopupMenu(v);
+
+        } else if (id == R.id.img_search) {
+            AnimationSet animas = Conversions.animation();
+            v.startAnimation(animas);
+
+            Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
+            ActivityOptions optionss = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intents, optionss.toBundle());
         }
     }
 
@@ -220,19 +226,25 @@ public class GhazalsActivity extends AppCompatActivity implements View.OnClickLi
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_1:
-                    case R.id.menu_item_2:
-                    case R.id.menu_item_3:
-                    case R.id.menu_item_4:
-                    case R.id.menu_item_5:
-                        list_Activity(menuItem);
-                        return true;
-                    case R.id.menu_item_6:
-                        ghail_Activity();
-                        return true;
-                    default:
-                        return false;
+
+                int id = menuItem.getItemId();
+
+                if (id == R.id.menu_item_1 ||
+                        id == R.id.menu_item_2 ||
+                        id == R.id.menu_item_3 ||
+                        id == R.id.menu_item_4 ||
+                        id == R.id.menu_item_5) {
+
+                    list_Activity(menuItem);
+                    return true;
+
+                } else if (id == R.id.menu_item_6) {
+
+                    ghail_Activity();
+                    return true;
+
+                } else {
+                    return false;
                 }
             }
         });

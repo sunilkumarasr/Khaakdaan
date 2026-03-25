@@ -184,39 +184,40 @@ public class LikedlistActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.img_back:
-                AnimationSet anima = Conversions.animation();
-                v.startAnimation(anima);
 
-                Intent intent1 = new Intent(getApplicationContext(), MainActivity2.class);
-                startActivity(intent1);
-                overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
-                finish();
-                break;
-            case R.id.img_home:
-                AnimationSet animas = Conversions.animation();
-                v.startAnimation(animas);
+        int id = v.getId();
 
-                Intent inten = new Intent(getApplicationContext(), MainActivity2.class);
-                startActivity(inten);
-                overridePendingTransition(R.anim.left_in_left, R.anim.left_out_right);
-                finish();
-                break;
-            case R.id.img_menu:
-                AnimationSet animau = Conversions.animation();
-                v.startAnimation(animau);
+        // common animation for all clicks
+        AnimationSet animation = Conversions.animation();
+        v.startAnimation(animation);
 
-                showPopupMenu(v);
-                break;
-            case R.id.img_search:
-                AnimationSet anim = Conversions.animation();
-                v.startAnimation(anim);
+        if (id == R.id.img_back) {
 
-                Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
-                ActivityOptions optionss = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.left_out_right, R.anim.left_in_left);
-                startActivity(intents, optionss.toBundle());
-                break;
+            Intent intent1 = new Intent(getApplicationContext(), MainActivity2.class);
+            startActivity(intent1);
+            overridePendingTransition(R.anim.left_out_right, R.anim.left_in_left);
+            finish();
+
+        } else if (id == R.id.img_home) {
+
+            Intent inten = new Intent(getApplicationContext(), MainActivity2.class);
+            startActivity(inten);
+            overridePendingTransition(R.anim.left_in_left, R.anim.left_out_right);
+            finish();
+
+        } else if (id == R.id.img_menu) {
+
+            showPopupMenu(v);
+
+        } else if (id == R.id.img_search) {
+
+            Intent intents = new Intent(getApplicationContext(), SearchActivity.class);
+            ActivityOptions optionss = ActivityOptions.makeCustomAnimation(
+                    getApplicationContext(),
+                    R.anim.left_out_right,
+                    R.anim.left_in_left
+            );
+            startActivity(intents, optionss.toBundle());
         }
     }
 
@@ -239,19 +240,23 @@ public class LikedlistActivity extends AppCompatActivity implements View.OnClick
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_1:
-                    case R.id.menu_item_2:
-                    case R.id.menu_item_3:
-                    case R.id.menu_item_4:
-                    case R.id.menu_item_5:
-                        list_Activity(menuItem);
-                        return true;
-                    case R.id.menu_item_6:
-                        ghail_Activity();
-                        return true;
-                    default:
-                        return false;
+
+                int id = menuItem.getItemId();
+
+                if (id == R.id.menu_item_1 || id == R.id.menu_item_2 ||
+                        id == R.id.menu_item_3 || id == R.id.menu_item_4 ||
+                        id == R.id.menu_item_5) {
+
+                    list_Activity(menuItem);
+                    return true;
+
+                } else if (id == R.id.menu_item_6) {
+
+                    ghail_Activity();
+                    return true;
+
+                } else {
+                    return false;
                 }
             }
         });
